@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var array = [18, 24, 35, 1, 16, 10];
+		var flag = true;
+		while (flag === true) {
+			flag = false;
+			for (var i = 0; i<= array.length-1; i++) {
+			    if (array[i] < array[i+1]) {
+				    var max = array[i];
+					array[i] = array[i+1];
+					array[i+1] = max;
+					flag = true;
+				}
+			}
+		}	
+		console.log(array);			
+	</script>
+</body>
+</html>
